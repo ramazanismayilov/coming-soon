@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.coming-soon {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+
+.coming-soon img {
+  margin-bottom: 20px;
+}
+
+.coming-soon h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: "Verdana", Geneva, sans-serif;
+  letter-spacing: 2px;
+  color: #e83e8c;
+  margin-bottom: 10px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.coming-soon h3 {
+  font-size: 30px;
+  font-family: "Verdana", Geneva, sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  color: #555;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.coming-soon .contact-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.coming-soon .contact-number a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.coming-soon .contact-number a i {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.coming-soon .contact-number a:hover {
+  transform: scale(1.1);
+  color: #e83e8c;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
